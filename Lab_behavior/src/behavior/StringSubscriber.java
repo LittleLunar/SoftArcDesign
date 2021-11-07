@@ -31,7 +31,7 @@ public abstract class StringSubscriber implements Flow.Subscriber<String> {
 	}
 
 	public void unsubscribe() {
-		this.subscription.cancel();
+		((StringSubscription) this.subscription).removeSubscriber(this);
 		this.subscription = null;
 		
 	}

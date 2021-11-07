@@ -26,9 +26,5 @@ public class StringSubscription implements Flow.Subscription {
 
 	@Override
 	public void cancel() {}
-
-	
-
-
 	
 }

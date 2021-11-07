@@ -30,7 +30,7 @@ public class SymbolSubscriber extends StringSubscriber {
 	@Override
 	public void onNext(String item) {
 		
-		if (item.matches("(.*)[^a-zA-z0-9](.*)")) {
+		if (item.matches("(.*)[[^a-zA-z0-9]&&[^\s]](.*)")) {
 			
 			try {
 				Timestamp timestamp = new Timestamp(System.currentTimeMillis());

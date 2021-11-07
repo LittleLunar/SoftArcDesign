@@ -18,7 +18,6 @@ public class AlphabetSubscriber extends StringSubscriber {
 		Path filePath = Paths.get(System.getProperty("user.dir"), "src","behavior",filename);
 		
 		this.file = new File(filePath.toString());
-		
 	}
 
 	@Override
